@@ -32,15 +32,23 @@ func Router() *gin.Engine {
 		})
 	})
 
-	// Step1: add a signup API
+	// TODO 1: add a signup API
 	// 1. check email is exist
 	// 2. create account
 	// 3. response account info which contains token
 
-	// Step2: add an API to get account info
-	// 1. check token is valid
+	// TODO 2: add an API to get account info
+	// 1. check token is valid in middleware
 	// 2. get account info
 	// 3. response account info
+
+	// TODO 3: add an API upload account profile image
+	// 1. check token is valid in middleware
+	// 2. receive image file
+	// 3. check image file is valid [png, jpg, jpeg]
+	// 4. upload image using function utils.UploadImage
+	// 5. update account profile image
+	// 6. response account info
 
 	return router
 }
